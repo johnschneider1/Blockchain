@@ -22,8 +22,12 @@ const DisCard = () => {
             return block.transactions.map(transaction => {
               return (
                 <h2>
-                  Receipient:{transaction.recipient} Amount:
-                  {transaction.amount}Timestamp:{block.timestamp}
+                  <h3>Receipient:{transaction.recipient}</h3>
+                  <h3>
+                    Amount:
+                    {transaction.amount}
+                  </h3>
+                  <h3>TimeStamp:{block.timestamp}</h3>
                 </h2>
               );
             });
